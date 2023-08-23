@@ -1,1 +1,63 @@
-
+// Compiled from Game.java (version 17 : 61.0, super bit)
+public class Game {
+  
+  // Method descriptor #6 ()V
+  // Stack: 1, Locals: 1
+  public Game();
+    0  aload_0 [this]
+    1  invokespecial java.lang.Object() [8]
+    4  return
+      Line numbers:
+        [pc: 0, line: 5]
+      Local variable table:
+        [pc: 0, pc: 5] local: this index: 0 type: Game
+  
+  // Method descriptor #15 ([Ljava/lang/String;)V
+  // Stack: 5, Locals: 3
+  public static void main(java.lang.String[] args);
+     0  new javax.swing.JFrame [16]
+     3  dup
+     4  invokespecial javax.swing.JFrame() [18]
+     7  astore_1 [obj]
+     8  new GamePlay [19]
+    11  dup
+    12  invokespecial GamePlay() [21]
+    15  astore_2 [gameplay]
+    16  aload_1 [obj]
+    17  bipush 10
+    19  bipush 10
+    21  sipush 905
+    24  sipush 700
+    27  invokevirtual javax.swing.JFrame.setBounds(int, int, int, int) : void [22]
+    30  aload_1 [obj]
+    31  getstatic java.awt.Color.DARK_GRAY : java.awt.Color [26]
+    34  invokevirtual javax.swing.JFrame.setBackground(java.awt.Color) : void [32]
+    37  aload_1 [obj]
+    38  iconst_0
+    39  invokevirtual javax.swing.JFrame.setResizable(boolean) : void [36]
+    42  aload_1 [obj]
+    43  iconst_1
+    44  invokevirtual javax.swing.JFrame.setVisible(boolean) : void [40]
+    47  aload_1 [obj]
+    48  iconst_3
+    49  invokevirtual javax.swing.JFrame.setDefaultCloseOperation(int) : void [43]
+    52  aload_1 [obj]
+    53  aload_2 [gameplay]
+    54  invokevirtual javax.swing.JFrame.add(java.awt.Component) : java.awt.Component [47]
+    57  pop
+    58  return
+      Line numbers:
+        [pc: 0, line: 9]
+        [pc: 8, line: 10]
+        [pc: 16, line: 11]
+        [pc: 30, line: 12]
+        [pc: 37, line: 13]
+        [pc: 42, line: 14]
+        [pc: 47, line: 15]
+        [pc: 52, line: 16]
+        [pc: 58, line: 17]
+      Local variable table:
+        [pc: 0, pc: 59] local: args index: 0 type: java.lang.String[]
+        [pc: 8, pc: 59] local: obj index: 1 type: javax.swing.JFrame
+        [pc: 16, pc: 59] local: gameplay index: 2 type: GamePlay
+}
